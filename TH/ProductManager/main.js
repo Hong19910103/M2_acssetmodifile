@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var Product_1 = require("./Product");
+var ProductManager_1 = require("./ProductManager");
+var p1 = new Product_1.Product("iphone", 1000);
+var p2 = new Product_1.Product("samsung", 1250);
+var p3 = new Product_1.Product("opple", 500);
+var productManager = new ProductManager_1.ProductManager();
+productManager.setAdd(p1);
+productManager.setAdd(p2);
+productManager.setAdd(p3);
+console.log(productManager.getAllAdd());
